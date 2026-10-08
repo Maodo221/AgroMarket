@@ -2181,7 +2181,7 @@ button:hover {
 /* ================= CONTACT PROFESSIONNEL ================= */
 
 .contact-section {
-  background-image: url("images/Legumes.avif");
+  background-image: url= "Legumes.webp";
   padding: 90px 30px;
   background: linear-gradient(180deg, #f5faf6, #ffffff);
 }
