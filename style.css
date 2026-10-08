@@ -2544,62 +2544,73 @@ button:hover {
 }
 
 /* =====================================================
-   RESPONSIVE - HEADER
+   RESPONSIVE HEADER - AGROMARKET
    ===================================================== */
 
 .menu-toggle {
   display: none;
-  background: transparent;
-  color: white;
-  border: none;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 5px;
 }
 
-/* ---------- TABLETTE / TÉLÉPHONE ---------- */
+/* ==================== TÉLÉPHONE ==================== */
 
 @media (max-width: 750px) {
   header {
-    padding: 12px 20px;
-    position: sticky;
-    top: 0;
-  }
-
-  .logo img {
-    width: 45px;
-    height: 45px;
-  }
-
-  .logo span {
-    font-size: 22px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
     flex-wrap: wrap;
   }
 
-  nav {
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo span {
+    font-size: 21px;
+  }
+
+  /* Bouton hamburger */
+
+  .menu-toggle {
+    display: block;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  /* Navigation cachée */
+
+  header nav {
     display: none;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    padding-top: 15px;
+    gap: 0;
+    margin-top: 10px;
   }
 
-  nav.active {
+  /* Navigation lorsqu'elle est ouverte */
+
+  header nav.active {
     display: flex;
   }
 
-  nav a {
+  header nav a {
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 12px 5px;
     margin: 0;
   }
 }
