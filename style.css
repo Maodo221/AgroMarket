@@ -2542,3 +2542,64 @@ button:hover {
     box-sizing: border-box;
   }
 }
+
+/* =====================================================
+   RESPONSIVE - HEADER
+   ===================================================== */
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* ---------- TABLETTE / TÉLÉPHONE ---------- */
+
+@media (max-width: 750px) {
+  header {
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+  }
+
+  .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo span {
+    font-size: 22px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-top: 15px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+}
