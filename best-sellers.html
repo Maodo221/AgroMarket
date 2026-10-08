@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <!-- MENU -->
+    <header>
+      <div class="logo">
+        <img src="images/Logo1.png" alt="Logo" />
+        <span>AgroMarket</span>
+      </div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="categories.html">Nos catégories</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="best-sellers.html">Best sellers</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="panier.html" class="panier-btn">
+          🛒 (<span id="nb-panier">0</span>)
+        </a>
+      </nav>
+    </header>
+    <!-- PRODUITS POPULAIRES -->
+    <section class="best-sellers">
+      <h2>🔥 Produits les plus vendus</h2>
+
+      <div class="best-grid">
+        <div class="best-card">
+          <span class="badge">🔥 Meilleure vente</span>
+
+          <img src="images/tomates.webp" alt="Tomates" />
+
+          <h3>Tomates Fraîches</h3>
+
+          <p>1000 FCFA / kg</p>
+
+          <button onclick="ajouterPanier('Tomates', 1000)">
+            Ajouter au panier
+          </button>
+        </div>
+
+        <div class="best-card">
+          <span class="badge">⭐ Populaire</span>
+
+          <img src="images/Oignons.avif" alt="Oignons" />
+
+          <h3>Oignons</h3>
+
+          <p>700 FCFA / kg</p>
+
+          <button onclick="ajouterPanier('Oignons', 700)">
+            Ajouter au panier
+          </button>
+        </div>
+
+        <div class="best-card">
+          <span class="badge">🥬 Nouveau</span>
+
+          <img src="images/Gombos.avif" alt="Gombo" />
+
+          <h3>Gombo</h3>
+
+          <p>1000 FCFA / kg</p>
+
+          <button onclick="ajouterPanier('Gombo', 1000)">
+            Ajouter au panier
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <h3>🌱 AgroMarket</h3>
+
+          <p>Des légumes frais et de qualité au Sénégal.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Liens rapides</h4>
+
+          <a href="index.html">Accueil</a>
+          <a href="boutique.html">Boutique</a>
+          <a href="apropos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Nos services</h4>
+
+          <a href="categories.html">Nos catégories</a>
+          <a href="best-sellers.html">Best sellers</a>
+          <a href="panier.html">Mon panier</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+
+          <p>📍 Sénégal</p>
+          <a href="https://wa.me/221705404081"> 📱 WhatsApp </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AgroMarket - Légumes frais au Sénégal</p>
+      </div>
+    </footer>
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/221705404081" class="whatsapp">📱 WhatsApp</a>
+  </body>
+</html>

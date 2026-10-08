@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"
+  </head>
+  <body>
+    <script src = "script.js"></script>
+    <!-- MENU -->
+    <header>
+      <div class="logo">
+        <img src="images/Logo1.png" alt="Logo" />
+        <span>AgroMarket</span>
+      </div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="categories.html">Nos catégories</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="best-sellers.html">Best sellers</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="panier.html" class="panier-btn">
+          🛒 (<span id="nb-panier">0</span>)
+        </a>
+      </nav>
+    </header>
+    <!-- CATEGORIES -->
+    <section class="categories">
+      <h2>🌾 Nos Catégories</h2>
+
+      <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="slideLeft()">◀</button>
+
+        <div class="categories-slider" id="categories-slider">
+          <div class="categorie">
+            <img src="images/tomates.webp" alt="Tomates" />
+            <h3>Tomates</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/Carottes.avif" alt="Carottes" />
+            <h3>Carottes</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/Oignons.avif" alt="Oignons" />
+            <h3>Oignons</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/piment.avif" alt="Piments" />
+            <h3>Piments</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/choux.avif" alt="Choux" />
+            <h3>Choux</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/Gombos.avif" alt="Gombo" />
+            <h3>Gombo</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/Pomme-de-terre.avif" alt="Pommes de terre"/>
+            <h3>Pommes de terre</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/Concombres.avif" alt="Concombres" />
+            <h3>Concombres</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/Poivrons.avif" alt="Poivrons" />
+            <h3>Poivrons</h3>
+          </div>
+          <div class="categorie">
+            <img src="images/Aubergines.avif" alt="Aubergines" />
+            <h3>Aubergines</h3>
+          </div>
+
+          <div class="categorie">
+            <img src="images/Salades.avif" alt="salades" />
+            <h3>salades</h3>
+          </div>
+          <div class="categorie">
+            <img src="images/Fruit-de-mer.webp" alt="Fruit-de-mer" />
+            <h3>Fruit-de-mer</h3>
+          </div>
+          <div class="categorie">
+            <img src="images/Navets.avif" alt="Navets" />
+            <h3>salades</h3>
+          </div>         
+        </div>
+
+        <button class="carousel-btn next" onclick="slideRight()">▶</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <h3>🌱 AgroMarket</h3>
+
+          <p>Des légumes frais et de qualité au Sénégal.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Liens rapides</h4>
+
+          <a href="index.html">Accueil</a>
+          <a href="boutique.html">Boutique</a>
+          <a href="apropos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Nos services</h4>
+
+          <a href="categories.html">Nos catégories</a>
+          <a href="best-sellers.html">Best sellers</a>
+          <a href="panier.html">Mon panier</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+
+          <p>📍 Sénégal</p>
+          <a href="https://wa.me/221705404081"> 📱 WhatsApp </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AgroMarket - Légumes frais au Sénégal</p>
+      </div>
+    </footer>
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/221705404081" class="whatsapp">📱 WhatsApp</a>
+  </body>
+</html>

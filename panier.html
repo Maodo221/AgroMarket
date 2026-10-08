@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- MENU -->
+    <header>
+      <div class="logo">
+        <img src="images/Logo1.png" alt="Logo" />
+        <span>AgroMarket</span>
+      </div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="categories.html">Nos catégories</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="best-sellers.html">Best sellers</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="panier.html" class="panier-btn">
+          🛒 (<span id="nb-panier">0</span>)
+        </a>
+      </nav>
+    </header>
+    <!-- ================= PANIER PROFESSIONNEL ================= -->
+
+    <section class="panier-section">
+      <!-- En-tête du panier -->
+      <div class="panier-header">
+        <span class="panier-label">VOTRE COMMANDE</span>
+
+        <h2>🛒 Mon Panier</h2>
+
+        <p>Vérifiez vos produits frais avant de finaliser votre commande.</p>
+      </div>
+
+      <!-- Contenu principal -->
+      <div class="panier-layout">
+        <!-- COLONNE DES PRODUITS -->
+        <div class="panier-produits">
+          <div class="panier-titre">
+            <h3>Vos produits</h3>
+            <span>AgroMarket 🌱</span>
+          </div>
+
+          <ul id="liste-panier"></ul>
+
+          <!-- Message lorsque le panier est vide -->
+          <div class="panier-vide">
+            <span>🛒</span>
+            <h3>Votre panier est vide</h3>
+            <p>Découvrez nos légumes frais et ajoutez vos produits préférés.</p>
+          </div>
+        </div>
+
+        <!-- COLONNE DU RÉSUMÉ -->
+        <aside class="panier-resume">
+          <h3>Résumé de la commande</h3>
+
+          <div class="resume-ligne">
+            <span>Sous-total</span>
+            <strong> <span id="total-resume">0</span> FCFA </strong>
+          </div>
+
+          <div class="resume-ligne">
+            <span>Livraison</span>
+            <strong class="livraison-gratuite"> À confirmer </strong>
+          </div>
+
+          <div class="resume-separateur"></div>
+
+          <div class="resume-total">
+            <span>Total</span>
+            <strong> <span id="total">0</span> FCFA </strong>
+          </div>
+
+          <button class="btn-commande" onclick="commander()">
+            Finaliser la commande
+            <span>→</span>
+          </button>
+
+          <div class="garanties">
+            <div class="garantie">
+              <span>🚚</span>
+              <div>
+                <strong>Livraison rapide</strong>
+                <small>Selon votre zone</small>
+              </div>
+            </div>
+
+            <div class="garantie">
+              <span>🔒</span>
+              <div>
+                <strong>Commande sécurisée</strong>
+                <small>Un service fiable</small>
+              </div>
+            </div>
+
+            <div class="garantie">
+              <span>💬</span>
+              <div>
+                <strong>Assistance WhatsApp</strong>
+                <small>Contactez-nous facilement</small>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <h3>🌱 AgroMarket</h3>
+
+          <p>Des légumes frais et de qualité au Sénégal.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Liens rapides</h4>
+
+          <a href="index.html">Accueil</a>
+          <a href="boutique.html">Boutique</a>
+          <a href="apropos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Nos services</h4>
+
+          <a href="categories.html">Nos catégories</a>
+          <a href="best-sellers.html">Best sellers</a>
+          <a href="panier.html">Mon panier</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+
+          <p>📍 Sénégal</p>
+          <a href="https://wa.me/221705404081"> 📱 WhatsApp </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AgroMarket - Légumes frais au Sénégal</p>
+      </div>
+    </footer>
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/221705404081" class="whatsapp">📱 WhatsApp</a>
+  </body>
+</html>

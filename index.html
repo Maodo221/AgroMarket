@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AgroMarket : découvrez des légumes frais et de qualité au Sénégal."
+    />
+    <title>AgroMarket - Légumes frais</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- MENU -->
+    <header>
+      <div class="logo">
+        <img src="images/Logo1.png" alt="Logo" />
+        <span>AgroMarket</span>
+      </div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="categories.html">Nos catégories</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="best-sellers.html">Best sellers</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="panier.html" class="panier-btn">
+          🛒 (<span id="nb-panier">0</span>)
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil">
+        <div class="hero-container">
+          <!-- CONTENU DU HERO -->
+          <div class="hero-content">
+            <span class="hero-badge"> 🌿 Fraîcheur directement du champ </span>
+
+            <h1>
+              Des légumes frais pour
+              <span>une alimentation saine</span>
+            </h1>
+
+            <p>
+              Découvrez des légumes de qualité, sélectionnés avec soin et
+              disponibles au meilleur prix au Sénégal.
+            </p>
+
+            <!-- BOUTONS -->
+            <div class="hero-buttons">
+              <a href="boutique.html" class="btn btn-primary">
+                🛒 Découvrir la boutique
+                <span>→</span>
+              </a>
+
+              <a href="categories.html" class="btn btn-secondary">
+                Voir les catégories
+              </a>
+            </div>
+
+            <!-- ARGUMENTS DE CONFIANCE -->
+            <div class="hero-trust">
+              <span>✓ Produits frais</span>
+
+              <span>✓ Prix accessibles</span>
+
+              <span>✓ Service de proximité</span>
+            </div>
+          </div>
+
+          <!-- IMAGE DU HERO -->
+          <div class="hero-image">
+            <div class="hero-image-decoration"></div>
+
+            <img src="images/panier.jpg" alt="Panier de légumes frais" />
+          </div>
+        </div>
+      </section>
+
+      <!-- STATISTIQUES-->
+
+      <section class="stats">
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-icon">🌿</div>
+
+            <div>
+              <h3>500+</h3>
+              <p>Clients satisfaits</p>
+            </div>
+          </div>
+
+          <div class="stat-separator"></div>
+
+          <div class="stat-item">
+            <div class="stat-icon">▦</div>
+
+            <div>
+              <h3>11+</h3>
+              <p>Catégories</p>
+            </div>
+          </div>
+
+          <div class="stat-separator"></div>
+
+          <div class="stat-item">
+            <div class="stat-icon">🚚</div>
+
+            <div>
+              <h3>24h</h3>
+              <p>Livraison rapide</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- POURQUOI NOUS CHOISIR         -->
+      <!-- ============================= -->
+
+      <section class="advantages">
+        <div class="section-heading">
+          <span class="section-label"> POURQUOI CHOISIR AGROMARKET ? </span>
+
+          <h2>
+            Des produits de qualité,
+            <span>une expérience unique</span>
+          </h2>
+
+          <p>
+            Nous vous offrons bien plus que des légumes. Nous vous assurons
+            fraîcheur, qualité et un service fiable.
+          </p>
+        </div>
+
+        <div class="advantages-grid">
+          <!-- CARTE 1 -->
+          <article class="advantage-card">
+            <div class="advantage-icon">🌿</div>
+
+            <h3>100% Frais</h3>
+
+            <p>
+              Des produits sélectionnés avec soin pour garantir leur fraîcheur.
+            </p>
+          </article>
+
+          <!-- CARTE 2 -->
+          <article class="advantage-card">
+            <div class="advantage-icon">🤝</div>
+
+            <h3>Proximité et confiance</h3>
+
+            <p>Nous valorisons les producteurs locaux et nos clients.</p>
+          </article>
+
+          <!-- CARTE 3 -->
+          <article class="advantage-card">
+            <div class="advantage-icon">🚚</div>
+
+            <h3>Livraison rapide</h3>
+
+            <p>Un service de livraison adapté à vos besoins.</p>
+          </article>
+
+          <!-- CARTE 4 -->
+          <article class="advantage-card">
+            <div class="advantage-icon">🛡️</div>
+
+            <h3>Paiement sécurisé</h3>
+
+            <p>Des solutions de paiement simples et pratiques.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- CATÉGORIES POPULAIRES         -->
+      <!-- ============================= -->
+
+      <section class="categories-section">
+        <div class="section-heading">
+          <span class="section-label"> NOS PRODUITS </span>
+
+          <h2>
+            Découvrez nos
+            <span>catégories populaires</span>
+          </h2>
+
+          <p>
+            Explorez nos différentes catégories de légumes et trouvez les
+            produits adaptés à vos besoins.
+          </p>
+        </div>
+
+        <div class="categories-grid">
+          <a href="categories.html" class="category-card">
+            <div class="category-image">🥬</div>
+
+            <h3>Légumes verts</h3>
+
+            <span> Découvrir → </span>
+          </a>
+
+          <a href="categories.html" class="category-card">
+            <div class="category-image">🍅</div>
+
+            <h3>Légumes frais</h3>
+
+            <span> Découvrir → </span>
+          </a>
+
+          <a href="categories.html" class="category-card">
+            <div class="category-image">🫑</div>
+
+            <h3>Poivrons</h3>
+
+            <span> Découvrir → </span>
+          </a>
+
+          <a href="categories.html" class="category-card">
+            <div class="category-image">🥕</div>
+
+            <h3>Autres légumes</h3>
+
+            <span> Découvrir → </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============================= -->
+      <!-- APPEL À L'ACTION              -->
+      <!-- ============================= -->
+
+      <section class="cta-section">
+        <div class="cta-content">
+          <span class="section-label"> AGROMARKET </span>
+
+          <h2>
+            Prêt à découvrir
+            <span>la fraîcheur ?</span>
+          </h2>
+
+          <p>Découvrez notre sélection de légumes et commandez facilement.</p>
+
+          <a href="boutique.html" class="btn btn-primary">
+            Découvrir la boutique →
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================= -->
+    <!-- BOUTON WHATSAPP               -->
+    <!-- ============================= -->
+
+    <a
+      href="https://wa.me/221705404081"
+      class="whatsapp"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contacter AgroMarket sur WhatsApp"
+    >
+      📱 WhatsApp
+    </a>
+
+    <!-- ============================= -->
+    <!-- FOOTER                        -->
+    <!-- ============================= -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- COLONNE 1 -->
+        <div class="footer-column footer-brand">
+          <a href="index.html" class="footer-logo"> 🌱 AgroMarket </a>
+
+          <p>Des légumes frais et de qualité au Sénégal.</p>
+        </div>
+
+        <!-- COLONNE 2 -->
+        <div class="footer-column">
+          <h3>Liens rapides</h3>
+
+          <a href="index.html"> Accueil </a>
+
+          <a href="boutique.html"> Boutique </a>
+
+          <a href="apropos.html"> À propos </a>
+
+          <a href="contact.html"> Contact </a>
+        </div>
+
+        <!-- COLONNE 3 -->
+        <div class="footer-column">
+          <h3>Nos services</h3>
+
+          <a href="categories.html"> Nos catégories </a>
+
+          <a href="best-sellers.html"> Best sellers </a>
+
+          <a href="panier.html"> Mon panier </a>
+        </div>
+
+        <!-- COLONNE 4 -->
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <p>📍 Sénégal</p>
+
+          <a
+            href="https://wa.me/221705404081"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📱 WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- BAS DU FOOTER -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 AgroMarket - Légumes frais au Sénégal</p>
+      </div>
+    </footer>
+  </body>
+</html>

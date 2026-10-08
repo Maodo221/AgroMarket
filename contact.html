@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- MENU -->
+    <header>
+      <div class="logo">
+        <img src="images/Logo1.png" alt="Logo" />
+        <span>AgroMarket</span>
+      </div>
+
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="categories.html">Nos catégories</a>
+        <a href="boutique.html">Boutique</a>
+        <a href="best-sellers.html">Best sellers</a>
+        <a href="apropos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="panier.html" class="panier-btn">
+          🛒 (<span id="nb-panier">0</span>)
+        </a>
+      </nav>
+    </header>
+    <main>
+      <!-- ================= CONTACT ================= -->
+      <section class="contact-section">
+        <div class="contact-header">
+          <span class="contact-badge">CONTACTEZ-NOUS</span>
+
+          <h2>Nous sommes à votre écoute</h2>
+
+          <p>
+            Une question concernant nos produits, une commande ou une livraison
+            ? Notre équipe est là pour vous accompagner.
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <!-- INFORMATIONS DE CONTACT -->
+          <div class="contact-info">
+            <div class="contact-info-content">
+              <span class="contact-small-title">AGROMARKET</span>
+
+              <h3>Parlons de votre projet</h3>
+              <p>
+                Nous vous proposons des légumes frais et de qualité, avec un
+                service simple et accessible.
+              </p>
+            </div>
+
+            <div class="contact-details">
+              <div class="contact-detail">
+                <div class="contact-icon">📞</div>
+
+                <div>
+                  <h4>Téléphone</h4>
+                  <a href="tel:+221705404081"> +221 70 540 40 81 </a>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon">✉️</div>
+
+                <div>
+                  <h4>Adresse e-mail</h4>
+                  <a href="mailto:contact@agromarket.sn">
+                    contact@agromarket.sn
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon">📍</div>
+
+                <div>
+                  <h4>Localisation</h4>
+                  <p>Thiès, Sénégal</p>
+                </div>
+              </div>
+
+              <div class="contact-detail">
+                <div class="contact-icon">🕒</div>
+
+                <div>
+                  <h4>Disponibilité</h4>
+                  <p>Lundi – Samedi</p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://wa.me/221705404081"
+              class="contact-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              💬 Nous contacter sur WhatsApp
+            </a>
+          </div>
+
+          <!-- FORMULAIRE -->
+          <div class="contact-form-card">
+            <div class="form-heading">
+              <h3>Envoyez-nous un message</h3>
+
+              <p>Remplissez le formulaire ci-dessous.</p>
+            </div>
+
+            <form id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nom">Nom complet</label>
+
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Votre nom"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Adresse e-mail</label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemple@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="+221 XX XXX XX XX"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="sujet">Sujet</label>
+
+                <select id="sujet" name="sujet" required>
+                  <option value="">Choisissez un sujet</option>
+                  <option value="commande">Question sur une commande</option>
+                  <option value="produits">
+                    Informations sur les produits
+                  </option>
+                  <option value="livraison">Question sur la livraison</option>
+                  <option value="partenariat">Demande de partenariat</option>
+                  <option value="autre">Autre demande</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Votre message</label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  placeholder="Écrivez votre message ici..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contact-submit">
+                Envoyer le message <span>→</span>
+              </button>
+
+              <p class="form-note">
+                🔒 Vos informations sont utilisées uniquement pour répondre à
+                votre demande.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column footer-brand">
+          <h3>🌱 AgroMarket</h3>
+
+          <p>Des légumes frais et de qualité au Sénégal.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Liens rapides</h4>
+
+          <a href="index.html">Accueil</a>
+          <a href="boutique.html">Boutique</a>
+          <a href="apropos.html">À propos</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Nos services</h4>
+
+          <a href="categories.html">Nos catégories</a>
+          <a href="best-sellers.html">Best sellers</a>
+          <a href="panier.html">Mon panier</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+
+          <p>📍 Sénégal</p>
+          <a href="https://wa.me/221705404081"> 📱 WhatsApp </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AgroMarket - Légumes frais au Sénégal</p>
+      </div>
+    </footer>
+  </body>
+</html>
